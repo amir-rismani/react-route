@@ -1,13 +1,19 @@
 import { NavLink } from "react-router-dom";
-import './Navigation.css'
+import './Navigation.css';
+
+const navLinks = [
+    { path: '/', title: 'Home' },
+    { path: '/about-us', title: 'AboutUs' },
+    { path: '/contact-us', title: 'ContactUs' },
+    { path: '/blogs', title: 'Blogs' },
+
+];
 const Navigation = () => {
     return (
         <div className="navigation">
             <nav>
                 <ul>
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/about-us">About Us</NavLink></li>
-                    <li><NavLink to="/contact-us">Contact Us</NavLink></li>
+                    {navLinks.map(navLink => <li key={navLink.path}><NavLink to={navLink.path} activeclassname="active">{navLink.title}</NavLink></li>)}
                 </ul>
             </nav>
         </div>
