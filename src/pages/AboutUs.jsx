@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-
+import "./Pages.css";
 const AboutUs = (props) => {
     console.log('useParams', props, useParams)
     return (<>

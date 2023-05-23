@@ -1,14 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import routes from './routes';
-import Navigation from './components/Navigation/Navigation';
+import Layout from './layouts/layout';
 function App() {
   return (
-    <Router>
-      <Navigation />
+    <Layout>
       <Routes>
-        {routes.map(route => <Route path={route.path} element={route.element} />)}
+        {routes.map(route => <Route path={route.path} element={route.element} key={route.path} />)}
       </Routes>
-    </Router>
+    </Layout>
   );
 }
 

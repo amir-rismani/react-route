@@ -1,3 +1,4 @@
+import "./Pages.css";
 const ContactUs = (props) => {
     console.log('props', props)
 
