@@ -1,7 +1,5 @@
 import "./Pages.css";
-const ContactUs = (props) => {
-    console.log('props', props)
-
+const ContactUs = () => {
     return (<>
         <h1>Contact Us</h1>
     </>);

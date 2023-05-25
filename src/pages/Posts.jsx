@@ -9,7 +9,7 @@ const postItems = [
 ];
 
 const Posts = () => {
-    return (<div className="blogs">
+    return (<div className="posts">
         <h1>Posts</h1>
         {postItems.map(postItem => <Link key={postItem.path} to={postItem.path}>{postItem.title}</Link>)}
     </div>);

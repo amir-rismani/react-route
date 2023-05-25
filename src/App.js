@@ -1,12 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
-import routes from './routes';
-import Layout from './layouts/layout';
+import Layout from './layouts/Layout';
+import WebRoutes from './layouts/Routes';
+
 function App() {
   return (
     <Layout>
-      <Routes>
-        {routes.map(route => <Route path={route.path} element={route.element} key={route.path} />)}
-      </Routes>
+      <WebRoutes />
     </Layout>
   );
 }

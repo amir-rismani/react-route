@@ -6,6 +6,7 @@ import Blogs from './pages/Blogs';
 import Blog from './pages/Blog';
 import Posts from './pages/Posts';
 import Post from './pages/Post';
+import Profile from './pages/Profile';
 
 const routes = [
     { path: '/', element: <Home /> },
@@ -15,6 +16,8 @@ const routes = [
     { path: '/blogs/:id', element: <Blog /> },
     { path: '/posts', element: <Posts /> },
     { path: '/posts/:id', element: <Post /> },
+    { path: '/profile', element: <Profile /> },
     { path: '*', element: <NotFound /> }
 ];
+
 export default routes;

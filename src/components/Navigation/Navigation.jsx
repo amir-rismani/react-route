@@ -7,8 +7,9 @@ const navLinks = [
     { path: '/contact-us', title: 'ContactUs' },
     { path: '/blogs', title: 'Blogs' },
     { path: '/posts', title: 'Posts' },
-
+    { path: '/profile', title: 'Profile' },
 ];
+
 const Navigation = () => {
     return (
         <div className="navigation">

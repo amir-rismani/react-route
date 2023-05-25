@@ -5,7 +5,7 @@ h1 {
 .home{
     text-align: center;
 }
-.blogs{
+.blogs, .profile, .posts{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,4 +14,21 @@ h1 {
 
 .blog{
     text-align: center;
+}
+
+.profile main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile aside{
+    background: rgb(226, 241, 246);
+    min-width: 20%;
+    justify-self: flex-start;
+}
+
+.profile aside ul{
+    list-style: none;
+    padding: 0;
 }
